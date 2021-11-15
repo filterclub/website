@@ -1,0 +1,113 @@
+:root {
+    --line-height-base: 1.5;
+    --filter-club-primary-color: 166 0 0;
+    --filter-club-secondary-color: 202 209 217;
+}
+
+html {
+    color: rgb(48, 48, 48);
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(15px, 2vw, 22px);
+    font-weight: 300;
+    margin: 0;
+}
+
+body {
+    padding: calc(0.5rem * var(--line-height-base)) 0;
+}
+
+header::before {    
+    background-attachment: fixed;
+    background-image: url("header-background.jpg");
+    background-position-x: center;
+    background-size: max(100%, 35rem);
+    bottom: 0;
+    content: "";
+    left: 0;
+    max-height: 15rem;
+    opacity: .25;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: rgb(var(--filter-club-secondary-color) / .15);
+    padding-bottom: calc(2.5rem * var(--line-height-base));
+}
+
+header > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75ch;
+    padding: 0 calc(var(--line-height-base) * 1rem);
+}
+
+.filter-club-logo {
+    max-width: 12.5rem;
+    padding-top: 8.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    hyphens: none;
+    line-height: calc(1.25 * var(--line-height-base));
+    margin-top: calc(1.5rem * var(--line-height-base));
+    max-width: 45ch;
+    text-align: left;
+    transform: rotate(-.75deg);
+}
+
+main {
+    margin: 0 auto;
+    max-width: 50ch;
+    padding: 0 calc(var(--line-height-base) * 1rem) 5rem;
+}
+
+h1 {
+    display: none;
+}
+
+h2 {
+    color: rgb(var(--filter-club-primary-color));
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: calc(1rem * var(--line-height-base));
+    margin-top: calc(3rem * var(--line-height-base));
+}
+
+p,
+li {
+    hyphens: auto;
+    line-height: var(--line-height-base);
+    margin-bottom: calc(var(--line-height-base) * .5rem);
+    margin-top: calc(var(--line-height-base) * .5rem);
+    text-align: justify;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(1rem * var(--line-height-base));
+    list-style-position: inside;
+    padding: 0;
+}
+
+li {
+    flex: 1 1 25ch;
+}
+
+a,
+a:hover,
+a:visited {
+    color: unset;
+    text-decoration: underline;
+}
+
+footer p {
+    color: rgb(96, 96, 96);
+    font-size: .8rem;
+    text-align: center;
+}
