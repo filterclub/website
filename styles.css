@@ -86,6 +86,9 @@ li {
     line-height: var(--line-height-base);
     margin-bottom: calc(var(--line-height-base) * .5rem);
     margin-top: calc(var(--line-height-base) * .5rem);
+}
+
+p {
     text-align: justify;
 }
 
@@ -98,7 +101,7 @@ ul {
 }
 
 li {
-    flex: 1 1 25ch;
+    flex: 1 1 23ch;
 }
 
 a,
