@@ -54,7 +54,7 @@ header > p {
     max-width: 45ch;
     padding: 0 calc(var(--line-height-base) * 1rem);
     text-align: left;
-    transform: rotate(-.75deg);
+    transform: rotate(-1deg);
 }
 
 main {
