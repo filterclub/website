@@ -83,7 +83,7 @@ li {
     margin-top: calc(var(--line-height-base) * .5rem);
 }
 
-p, li {
+p {
     text-align: justify;
 }
 
